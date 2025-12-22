@@ -39,12 +39,17 @@ h6 {
     font-size: 120%;
 }
 
+#banner {
+    text-align: center;
+}
+
 #banner img {
-    width: 1024px;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     border-radius: 15px;
     filter: saturate(70%);
     transition: .25s ease-in-out;
+    margin-bottom: -5px;
 }
 #banner img:hover {
     filter: saturate(100%)
