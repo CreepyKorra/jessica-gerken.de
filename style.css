@@ -1,10 +1,17 @@
 /* Font: Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* - - - - - Global - - - - - */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: Montserrat, Verdana, sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 430;
     color: #4C4C4C;
     line-height: 1.5em;
     background-color: #fafafa;
@@ -39,8 +46,59 @@ h6 {
     font-size: 120%;
 }
 
+a {
+    text-decoration: none;
+}
+
+small {
+    font-size: 92%;
+}
+
+/* - - - - - Header - - - - - */
+
+header {
+    background-color: #444444;
+    padding-top: 6px; 
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.container-header-navigation {
+
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.pane-header-logo {
+    background-color: #8356CB;
+}
+
+.pane-header-logo img {
+}
+
+.pane-header-title {
+
+    background-color: aqua;
+}
+.pane-header-navigation {
+
+    background-color: #8356CB;
+}
+
+.pane-header-search {
+
+    background-color: #56cb91;
+}
+
+/* - - - - - Main Banner - - - - - */
+
 #banner {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #banner img {
@@ -49,8 +107,61 @@ h6 {
     border-radius: 15px;
     filter: saturate(70%);
     transition: .25s ease-in-out;
-    margin-bottom: -5px;
+    margin-bottom: 8px;
+    box-shadow: 5px 5px 10px silver;
 }
 #banner img:hover {
     filter: saturate(100%)
+}
+
+/* - - - - - Main - - - - - */
+
+main {
+    
+}
+
+/* - - - - - Footer - - - - - */
+    
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-top {
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: #E0E0E0 solid 1px;
+}
+
+.footer-top nav {
+    word-spacing: 12px;
+}
+
+.footer-top nav a {
+    color: #8356CB;
+    text-decoration: none;
+}
+
+.footer-top nav a:hover {
+    color: #4C4C4C;
+}
+
+.footer-top nav a:active {
+    color: #ca23e0;
+}
+
+/*.footer-top nav a:visited {
+    color: #ca23e0;
+} */
+
+.footer-bottom {
+    background-color: #404040;
+    color: #CCCCCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom small {
+    word-spacing: 2px;
 }
