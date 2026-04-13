@@ -5,30 +5,44 @@
         <meta charset="UTF-8">
         <title>Fotografie - Jessica Gerken</title>        
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
         <header>
-            <p>LOGO Jessica Gerken Startseite Fotografie Rezepte</p>
-            <a href="index.html">Homepage</a>
-            <br>
-            <a href="rezepte.html">Rezepte</a>
+            <div id="header">
+                <script> 
+                $(function(){
+                    $("#header").load("header.html"); 
+                });
+                </script>
+            </div>
         </header>
         
         <main>
             <div id="banner">
                 <div><img src="images/fotografie_banner_pc.jpeg" alt="Leuchtende PC-Hardware" width="2048" height="450"></div>
-                <p>Eine Sammlung meiner besten Fotos // Kamera: <em>Canon EOS 1100D<em></p>
+                <p>Eine Sammlung meiner besten Fotos // Kamera: <em>Canon EOS 1100D</em></p>
             </div>
+            <section>
+                <h2>Verschiedenes</h2>
+            </section>
+            <section>
+                <h2>Werningerode / Harz</h2>
+            </section>
         </main>
 
-        <h2>Verschiedenes</h2>
-        <h2>Werningerode / Harz</h2>
-
         <footer>
-            <p>Startseite Fotografie Rezepte</p>
-            <p>© 2025 Jessica Gerken</p>
-        </footer>
+            <div id="footer">
+                <script> 
+                $(function(){
+                    $("#footer").load("footer.html"); 
+                });
+                </script>
+            </div>
+        </footer>    
     </body>
 
 </html>

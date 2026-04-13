@@ -5,28 +5,39 @@
         <meta charset="UTF-8">
         <title>Home - Jessica Gerken</title>        
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
         <header>
-            <p>LOGO Jessica Gerken Startseite Fotografie Rezepte</p>
-            <a href="fotografie.html">Fotografie</a>
-            <br>
-            <a href="rezepte.html">Rezepte</a>
+            <div id="header">
+                <script> 
+                $(function(){
+                    $("#header").load("header.html"); 
+                });
+                </script>
+            </div>
         </header>
         
         <main>
-        <div id="banner">
-            <div><img src="images/homepage_banner_ink.jpeg" alt="Füller und Tintenkleckse" width="2048" height="359"></div>
-        </div>
-        <h3>Jessica Gerken</h3>
-        <p>Alles, was mich interessiert. Ein Ort für Reflexion, Kreativität und andere private Dinge.</p>
+            <div id="banner">
+                <div><img src="images/homepage_banner_ink.jpeg" alt="Füller und Tintenkleckse" width="2048" height="359"></div>
+            </div>
+            <h3>Jessica Gerken</h3>
+            <p>Alles, was mich interessiert. Ein Ort für Reflexion, Kreativität und andere private Dinge.</p>
         </main>
 
         <footer>
-            <p>Startseite Fotografie Rezepte</p>
-            <p>© 2025 Jessica Gerken</p>
-        </footer>
+            <div id="footer">
+                <script> 
+                $(function(){
+                    $("#footer").load("footer.html"); 
+                });
+                </script>
+            </div>
+        </footer>        
     </body>
-
+    
 </html>
